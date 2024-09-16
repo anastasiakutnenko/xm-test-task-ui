@@ -15,6 +15,8 @@
     <selenium.version>4.24.0</selenium.version>
     <webdrivermanager.version>5.7.0</webdrivermanager.version>
     <testng.version>7.10.2</testng.version>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -35,16 +37,4 @@
       <version>${selenium.version}</version> <!-- Check for the latest version -->
     </dependency>
   </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>16</source>
-          <target>16</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
 </project>
